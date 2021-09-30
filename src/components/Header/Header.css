@@ -1,0 +1,11 @@
+.header{
+    background-color: teal;
+    line-height: 30px;
+}
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
