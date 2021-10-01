@@ -12,7 +12,7 @@ const MealDetail = () => {
             .then(res => res.json())
             .then(data => setMealDetails(data.meals[0]))
     }, [])
-    const { strMeal, strCategory, strMealThumb, strInstructions } = mealDetails;
+    const { strMeal, strMealThumb, strInstructions } = mealDetails;
     return (
         // <div>
         //     <img src={strMealThumb} alt="" />
