@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
-import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
-import Meals from './components/Meals/Meals';
 import About from './components/About/About';
+import Restaurant from './components/Restaurant/Restaurant';
+import MealDetail from './components/MealDetail/MealDetail';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -14,16 +14,19 @@ function App() {
         <Header></Header>
         <Switch>
           <Route exact path="/">
-            <Home></Home>
+            <Restaurant></Restaurant>
           </Route>
-          <Route path="/home">
-            <Home></Home>
+          <Route path="/restaurant">
+            <Restaurant></Restaurant>
           </Route>
-          <Route path="/meals">
-            <Meals></Meals>
+          <Route path="/contact">
+            <Contact></Contact>
           </Route>
           <Route path="/about">
             <About></About>
+          </Route>
+          <Route path="/meal/:mealId">
+            <MealDetail></MealDetail>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
